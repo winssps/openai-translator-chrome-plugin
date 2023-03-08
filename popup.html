@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>openai 滑词翻译</title>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="script-src 'self' 'nonce-ABCD1234'"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <title>转换成大写</title>
-</head>
-
-<body>
-  <div style="width: 200px">
-    <div id="translationBox">
-      <!-- <button id="button">翻译</button> -->
-      <p id="translatedText"></p>
+  <body>
+    <div style="width: 500px; height: 264px">
+      <div id="root"></div>
     </div>
-  </div>
-  <script src="popup.js"></script>
-</body>
-
+    <script src="lib/react.production.min.js"></script>
+    <script src="popup.js"></script>
+    <script src="dist/index.js"></script>
+  </body>
 </html>

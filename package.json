@@ -1,0 +1,27 @@
+{
+  "name": "openai-translator-chrome-plugin",
+  "version": "1.0.0",
+  "description": "openai-translator-chrome-plugin",
+  "main": "content.js",
+  "scripts": {
+    "build": "esbuild src/index.jsx --bundle --outdir=dist/ --jsx-factory=React.createElement --jsx-fragment=React.Fragment"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/winssps/openai-translator-chrome-plugin.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/winssps/openai-translator-chrome-plugin/issues"
+  },
+  "homepage": "https://github.com/winssps/openai-translator-chrome-plugin#readme",
+  "dependencies": {
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@mui/material": "^5.11.12",
+    "esbuild": "^0.17.11",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
