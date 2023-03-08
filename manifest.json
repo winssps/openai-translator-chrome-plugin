@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "转换成大写",
+  "description": "将当前页面上所有文本转换为大写字母。",
+  "version": "1.0.4",
+
+  "permissions": ["activeTab"],
+
+  "browser_action": {
+    "default_icon": "ladybug.png",
+    "default_title": "转换成大写",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
