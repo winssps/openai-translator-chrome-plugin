@@ -3,12 +3,16 @@ import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 
 function LoginForm() {
-  const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    console.log("Submitted!", username, password);
+    console.log("Submitted!", password);
+
+
+    browser.storage.sync.set
+
+
   };
 
   return (
