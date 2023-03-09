@@ -4,7 +4,7 @@
   "description": "openai-translator-chrome-plugin",
   "main": "content.js",
   "scripts": {
-    "build": "esbuild src/index.jsx --bundle --outdir=dist/ --jsx-factory=React.createElement --jsx-fragment=React.Fragment"
+    "build": "node build.mjs"
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,8 @@
     "esbuild": "^0.17.11",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "esbuild-plugin-copy": "^2.1.0"
   }
 }
