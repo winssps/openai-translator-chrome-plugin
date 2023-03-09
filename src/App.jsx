@@ -10,7 +10,7 @@ function LoginForm() {
     console.log("Submitted!", password);
 
 
-    browser.storage.sync.set
+    console.log(browser.storage.sync.set)
 
 
   };
