@@ -15,9 +15,13 @@ function LoginForm() {
     console.log(data.get("APIKey"));
 
     try {
-      console.log(browser)
+      console.log(browser.storage);
       const apiKey = data.get("APIKey");
       await browser.storage.sync.set({ apiKey });
+
+      const result = await browser.storage.sync.get("apiKey");
+
+      console.log("browser.storage", result);
     } catch (error) {
       console.log(error);
     }
@@ -39,12 +43,7 @@ function LoginForm() {
           id="APIKey"
           autoComplete="current-password"
         />
-        <Button
-          type="submit"
-          fullWidth
-          variant="contained"
-          sx={{ mt: 3, mb: 2 }}
-        >
+        <Button type="submit" fullWidth variant="contained" sx={{ mt: 3, mb: 2 }}>
           保存
         </Button>
       </Box>

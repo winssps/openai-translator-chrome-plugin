@@ -3,7 +3,7 @@
   "name": "openai-滑词翻译",
   "description": "使用openai api 的滑词翻译工具",
   "version": "1.0.4",
-  "permissions": ["activeTab"],
+  "permissions": ["storage"],
   "action": {
     "default_icon": "ladybug.png",
     "default_title": "滑词翻译",
@@ -12,7 +12,7 @@
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["js/content.js"]
+      "js": ["content.js"]
     }
   ],
   "host_permissions": ["https://*.openai.com/"]
