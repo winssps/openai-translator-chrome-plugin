@@ -158,13 +158,13 @@ const showTranslationPanel = async (event, text) => {
       Translation_Container.style.position = "absolute";
       Translation_Container.style.zIndex = "99999";
       Translation_Container.style.background = "#fff";
-      Translation_Container.style.padding = "2px";
+      Translation_Container.style.padding = "8px";
       Translation_Container.style.borderRadius = "4px";
       Translation_Container.style.boxShadow = "0 0 4px rgba(0,0,0,.2)";
       Translation_Container.style.cursor = "pointer";
       Translation_Container.style.userSelect = "none";
-      Translation_Container.style.width = "240px";
-      Translation_Container.style.height = "136px";
+      Translation_Container.style.width = "340px";
+      Translation_Container.style.minHeight = "136px";
       Translation_Container.style.overflow = "hidden";
       container.appendChild(Translation_Container);
     }
