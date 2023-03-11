@@ -26,10 +26,10 @@ const build = async () => {
       ],
       loader: {
         ".png": "dataurl",
+        ".js": "jsx",
       },
     })
     .catch(() => {
-      console.log("error");
       return process.exit(1);
     });
 };
